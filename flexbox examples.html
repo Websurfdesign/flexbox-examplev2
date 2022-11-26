@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Playing with Flexbox</title>
+<style>
+
+</style>
+<link href="flexbox.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+  <h1>CSS Flexbox demo</h1>
+  <p>Webpages are set up with rows and columns so that the design lines are straight and clean.  This is pleasing to the human eye.  This is why you should never, EVER, (hardly ever) center-align a block of text. But that is a lesson for a different day. </p>
+  <p>I have organized the layout of these samples in rows, but you can equally organize in columns. <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery">See this example </a>from W3Schools. </p>
+  <p><strong>Do not forget to control the page layout with a main container! see line 42 of this code.</strong> Also - all this style information should be on your attached CSS, not in the header of your document.  I just put it there so that I coud have this all on one page.</p>
+  <p>Feel free to use any of this code.</p>
+  <div class="flex-container">
+    <div class="section_L">Big block</div>
+    <div class="stack section_R">
+      <div>stack 1</div>
+      <div>stack 2</div>
+    </div>
+  </div>
+  <p>This line marks a new flexbox.</p>
+  <div class="flex-container">
+    <div class="section_L">Big block</div>
+    <div class="stack section_R">
+      <div>stack 1</div>
+      <div>stack 2</div>
+    </div>
+    <div class="section_L">Just added this additional section here.  This block just appears larger as it has more contents, but its "flex-grow" box is the same as the box on the left.  That is part of the joy of the flexbox.  It will flex to fit your contents.</div>
+  </div>
+  <p>This line marks a new flexbox.</p>
+  <div class="flex-container">
+    <div class="section_L">The code for this block is identical to the code for the row above.  It will flex differently because now this box has contents, too. </div>
+    <div class="stack section_R">
+      <div>so you can guess that it is imporant that you size things like images properly!</div>
+      <div>Stack 2</div>
+    </div>
+    <div class="section_L">Just added this additional section here.  This block just appears larger as it has more contents.  That is part of the joy of the flexbox.  It will flex to fit your contents.</div>
+  </div>
+  <p> again, another flexbox.  I will control the sizes here with percentages so it isn't quite so flexy. Note the inline style.  You would want to put that on your external CSS.</p>
+  <div class="flex-container">
+    <div class="section_L" style="flex: 50%;">Notice the inline style with percentages in this flexbox which helps this box keep its shape.  If you love flexboxes and want to know more than W3Schools taught you, take a look at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Mozilla Developer.</a></div>
+    <div class="stack section_R" style="flex: 50%;">
+      <div>stack 1</div>
+      <div>stack 2</div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-responsive" >here are three even boxes</div>
+    <div class="flex-responsive">using percentages rather than flex grow</div>
+    <div class="flex-responsive">they are responsive and are in a row or column based upon the screen width</div>
+  </div>
+</div>
+</body>
+</html>
